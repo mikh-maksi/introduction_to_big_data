@@ -7,6 +7,7 @@ import os
 plt.style.use('fivethirtyeight')
 
 
-df = pd.read_csv('/kaggle/input/life-balance/Life Circle Balance.csv')
+df = pd.read_csv('c:/work/introduction_to_big_data/kaggle/LifeCircleBalance.csv')
 # print('Dataset dimentions' + str(df.shape))
-df.head()
+print(df.head())
+print(df['Points for today'][0:8])
