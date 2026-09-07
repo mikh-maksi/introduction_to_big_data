@@ -8,19 +8,20 @@ drive.mount('/content/drive')
 
 
 ```
+import pandas as pd
 # шлях до датасету з даними про будинки Мельбурну
-melbourne_file_path = '/content/drive/MyDrive/ds/ml/melb_data.csv'
+file_path = '/content/drive/MyDrive/ds/melb_data.csv'
 
 # Створіть об'єкт, який міститиме в собі наш датасет
-melbourne_data = pd.read_csv(melbourne_file_path)
+data = pd.read_csv(file_path)
 
 ```
 
 
 ```
-melbourne_data.describe() 
+data.head()
 ```
 
 ```
-melbourne_data.head()
+data.describe()
 ```
